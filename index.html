@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insta-Sohor</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- google Montserrat  font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+            <a class="navbar-brand" href="#">Insta-Sohor</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-link active" role="button" onclick="switchTab( 'posts' )">
+                        <i class="fa-solid fa-house"></i>
+                    </li>
+
+                    <li class="nav-link active" role="button" onclick="switchTab( 'liked' )">
+                        <i class="fa-solid fa-heart text-danger"></i>
+                    </li>
+
+                    <li class="nav-link active" role="button" onclick="switchTab( 'reported' )">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main container mx-auto p-3">
+        <div id="posts">
+        </div>
+        <div id="liked">
+            <h1>Liked posts</h1>
+        </div>
+
+        <div id="reported">
+            <h1>Reported posts</h1>
+        </div>
+    </main>
+
+    <section class="container">
+        <div class="mb-3">
+            <h2 class="text-center my-5 text-info">How does javascript work?</h2>
+            <h5 class="my-2">প্রধানত জাভাস্ক্রিপ্ট একটি ক্লায়েন্ট সাইড স্ক্রিপ্টিং ভাষা। যেসব স্ক্রিপটিং ভাষা রয়েছে
+                তাদের মধ্যে
+                জাভাস্ক্রিপ্ট বহুল ব্যবহৃত হয় এবং জাভাস্ক্রিপ্টের সবচেয়ে দক্ষ স্ক্রিপ্টিং ল্যাঙ্গুয়েজ হিসেবে জানা
+                যায়। জাভাস্ক্রিপ্ট ব্রাউজার এর ভিতরে রান করে। ব্রাউজার এর ভিতরে জাভাস্ক্রিপ্ট ইঞ্জিন থাকে যার মাধ্যমে
+                জাভাস্ক্রিপ্ট কোড রাণ করে । বিভিন্ন ব্রাউজারের নিজস্ব জাভাস্ক্রিপ্ট ইঞ্জিন রয়েছে যেমন ফায়ারফক্সের
+                Spidermonkey, ক্রোমের v8, microsoft-এর Chakra । নিচের ধাপগুলো দ্বারা জাভাস্ক্রিপ্ট রান করে -</h5>
+            <h5>1. The script gets loaded as a UTF-16 byte systeam from either the network , cache or a worker and
+                passed to a byte stream decoder.</h5>
+            <h5>2. The byte stream decoder decodes the byte into tokens. The tokens are sent to the parser.</h5>
+            <h5>3. The parser generates nodes based on the tokens and creates an abstract syntax tree.</h5>
+            <h5>4. The interpreter walks through the AST and genertes byte code.</h5>
+            <h5 class="mb-5">5. The byte code and type feedback are sent to the optimizing complier which generates
+                highly optimized
+                machine code.</h5>
+        </div>
+        <div>
+            <h2 class="text-center my-5 text-info">Difference between local storage and session storage!!</h2>
+            <h3>#Local Storage</h3>
+            <h5>1.স্টোরেজঃ সাইজ 10 mb .</h5>
+            <h5> 2. ডাটা নিজ হাতে ডিলিট করতে হয়। </h5>
+            <h5>3. কোন নির্দিষ্ট ট্যাবের জন্য কাজ না করে যে কোন ট্যাবের জন্য কাজ করে। </h5>
+            <h5 class="mb-5">4. প্রতিটি HTTP অনুরোধের জন্য ডেটা সার্ভারে ফেরত পাঠানো হয়
+                (html, images, javascript, CSS, ইত্যাদি) হ্রাস করা
+                ক্লায়েন্ট এবং সার্ভারের মধ্যে ট্র্যাফিকের পরিমাণ</h5>
+
+            <h3>#Session Stroage</h3>
+            <h5>1. স্টোরেজঃ সাইজ 5 mb .</h5>
+            <h5>2. ব্রাউজার অথবা ট্যাগ বন্ধ করলে স্টরেস ক্লিয়ার হয়ে যায়। </h5>
+            <h5>3.ডেটা শুধুমাত্র window ভিতরে পাওয়া যায় যেখানে এটি সেট করা হয়েছিল</h5>
+            <h5 class="mb-5">4. কোন নির্দিষ্ট ট্যাবের জন্য কাজ করে অথবা অ্যাপ বন্ধ করে ডাটা মুছে যায় ।</h5>
+        </div>
+    </section>
+    <footer></footer>
+
+    <!-- add javascript  file  -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
